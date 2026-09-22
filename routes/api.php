@@ -7,6 +7,8 @@ use App\Http\Controllers\Api\JobController;
 use App\Http\Controllers\Api\ApplicationController;
 use App\Http\Controllers\Api\SavedJobController;
 
+
+//auth
 Route::post('/register',[AuthController::class,'register']);
 Route::post('/login',[AuthController::class,'login']);
 Route::get('/jobs',[JobController::class,'index']);
